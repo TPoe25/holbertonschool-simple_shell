@@ -5,12 +5,14 @@
 ## Files
 | Name | Description |
 |:--------:| -------------:|
-| 1 | right-aligned |
+| 1 | xxx |
 ## Functions and System calls used
 | Name | Description |
 |:--------:| -------------:|
 | 1 |  xxx|
+## How to install
+Clone the repo found at github.com/TPoe25/holbertonschool-simple_shell
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcxNjg0NTI1LC0xMzQzNDk4NiwxNDA0ND
+eyJoaXN0b3J5IjpbMTcwMTEyODUzLC0xMzQzNDk4NiwxNDA0ND
 QxMzM1LDM4OTM2NTc4N119
 -->
