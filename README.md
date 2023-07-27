@@ -1,18 +1,12 @@
 # Simple_Shell
-## Task 0: README, man AUTHORS
- 1. Create a Readme.md file that contains information about Project.
- 2. Create a Man page for your Shell.
- 3. Create a Authors file at the Root of the directory that lists all of the individuals that contributed to content inside of the repository.
+## Description
 
-## Task 1: Betty would be Proud
- 1. Write a clean code that follows the Betty standard format.
-   ** See https://github.com/alx-tools/Betty/wiki for more information on style and usage.
+ - This is a Simple Shell terminal that is able to produce 
 
-## Task 2: Simple Shell 0.1
+## Files
 
-### Write a UNIX command line interpreter named "Simple_Shell" that should -
- 1. Display a Prompt 
+## Functions and System calls used
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDM0OTg2LDE0MDQ0NDEzMzUsMzg5Mz
-Y1Nzg3XX0=
+eyJoaXN0b3J5IjpbMTg5NDMyOTk2MCwtMTM0MzQ5ODYsMTQwND
+Q0MTMzNSwzODkzNjU3ODddfQ==
 -->
