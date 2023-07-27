@@ -10,11 +10,9 @@
 
 ## Task 2: Simple Shell 0.1
 
-### Write a UNIX command line interpreter named "Simple_Shell".
-
- 1. List item
-
+### Write a UNIX command line interpreter named "Simple_Shell" that should -
+ 1. Display a Prompt 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg1NTg0MjgzLDE0MDQ0NDEzMzUsMzg5Mz
+eyJoaXN0b3J5IjpbLTEzNDM0OTg2LDE0MDQ0NDEzMzUsMzg5Mz
 Y1Nzg3XX0=
 -->
