@@ -39,14 +39,20 @@
 </tr>
 </tbody>
 </table><h2 id="how-to-install">How to install</h2>
-<p>Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simple_shell">github.com/TPoe25/holbertonschool-simple_shell</a>]</p>
+<p>
+Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simple_shell">github.com/TPoe25/holbertonschool-simple_shell</a>]</p>
 <pre><code>gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 </code></pre>
 <h2 id="usage">Usage</h2>
 <h3 id="built-ins">Built ins</h3>
 <h3 id="examples">Examples</h3>
 <ul>
-<li>Run in Interactive Mode</li>
-<li>Run in Non-interactive Mode</li>
+<li>
+ - Run in Interactive Mode</li>
+<li>
+ - Run in Non-interactive Mode</li>
 </ul>
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
+-->
