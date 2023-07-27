@@ -10,9 +10,11 @@
 
 ## Task 2: Simple Shell 0.1
 
+### Write a UNIX command line interpreter named "Simple_Shell".
+
  1. List item
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MTA2MDA1MywxNDA0NDQxMzM1LDM4OT
-M2NTc4N119
+eyJoaXN0b3J5IjpbMzg1NTg0MjgzLDE0MDQ0NDEzMzUsMzg5Mz
+Y1Nzg3XX0=
 -->
