@@ -1,5 +1,5 @@
 # Simple_Shell
-## Task 0
+## Task 0: README
 
  1. Create a Readme.md file that contains information about Project.
  2. Create a Man page for your Shell.
@@ -7,7 +7,11 @@
 
 ## Task 1
 
- 1. Write a clean code that follows the Betty standard format. 
+ 1. Write a clean code that follows the Betty standard format.
+   ** See https://github.com/alx-tools/Betty/wiki for more information on style and usage.
+
+##
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg5MzY1Nzg3XX0=
+eyJoaXN0b3J5IjpbMTA1MjU5Mzg1LDM4OTM2NTc4N119
 -->
