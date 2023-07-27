@@ -11,8 +11,10 @@
 |:--------:| -------------:|
 | 1 |  xxx|
 ## How to install
-Clone the repo found at github.com/TPoe25/holbertonschool-simple_shell
+Clone the repo found at [github.com/TPoe25/holbertonschool-simple_shell] ```
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMTEyODUzLC0xMzQzNDk4NiwxNDA0ND
-QxMzM1LDM4OTM2NTc4N119
+eyJoaXN0b3J5IjpbLTIwMTExMDYyNzIsLTEzNDM0OTg2LDE0MD
+Q0NDEzMzUsMzg5MzY1Nzg3XX0=
 -->
