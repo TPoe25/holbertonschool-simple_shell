@@ -16,8 +16,9 @@ Clone the repo found at [github.com/TPoe25/holbertonschool-simple_shell]
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 ```
 ## Usage
-### Bu
+### Built ins
+### Examples
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTM3NTQwOTksLTEzNDM0OTg2LDE0MD
-Q0NDEzMzUsMzg5MzY1Nzg3XX0=
+eyJoaXN0b3J5IjpbLTk0ODgxNzA3MiwtMTM0MzQ5ODYsMTQwND
+Q0MTMzNSwzODkzNjU3ODddfQ==
 -->
