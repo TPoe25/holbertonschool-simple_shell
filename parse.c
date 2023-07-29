@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "basic_shell.h"
 /**
  *parse_string - splits a string into multiple strings
  *@line: the input string to be divided
@@ -16,7 +16,7 @@ char **parse_string(char *line)
 		fprintf(stderr, "allocation error in parse.\n");
 		exit(EXIT_FAILURE);
 	}
-	token = strtok(line, TOK_DELIM);
+	token = strtok(line, TOKEN_DELIM);
 	while (token != NULL)
 {
 	if (token[0] == '#')
@@ -35,7 +35,7 @@ char **parse_string(char *line)
 		exit(EXIT_FAILURE);
 	}
 	}
-	token = strtok(NULL, TOK_DELIM);
+	token = strtok(NULL, TOKEN_DELIM);
 }
 	tokens[s] = NULL;
 	return (tokens);
