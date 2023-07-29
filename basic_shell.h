@@ -16,4 +16,10 @@ char **parse_string(char *line);
 /* getlinefunc.c */
 char *getlinefunc(void);
 
+/* builtin functions */
+int own_cd(char **args);
+int own_exit(char **args);
+int own_help(char **args);
+int own_env(char **args);
+
 #endif
