@@ -10,12 +10,19 @@ extern char **environ;
 #include <unistd.h>
 #include <stddef.h>
 #include <stdlib.h>
+#include <sys/wait.h>
 
 /* parse.c */
 char **parse_string(char *line);
 
 /* getlinefunc.c */
 char *getlinefunc(void);
+
+/* execute.c */
+int execute(char **args);
+
+/* next_process.c */
+int new_process(char **args);
 
 /* builtin functions */
 int own_cd(char **args);
