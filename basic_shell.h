@@ -4,6 +4,7 @@
 #define TOKEN_DELIM " \t\r\n\a"
 extern char **environ;
 
+#include "structure.h"
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
