@@ -31,6 +31,6 @@ int execute(char **args)
 		return ((*builtins[b])(args));
 		}
 	}
-	return (new_process(args));
+	return (next_process(args));
 
 }

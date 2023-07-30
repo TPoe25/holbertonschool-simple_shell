@@ -22,7 +22,7 @@ char *getlinefunc(void);
 int execute(char **args);
 
 /* next_process.c */
-int new_process(char **args);
+int next_process(char **args);
 
 /* stream.c  */
 char *read_line_stream(void);
