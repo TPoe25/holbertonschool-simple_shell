@@ -9,11 +9,11 @@
  * @name: the name of the builtin function
  * @func: implements the builtin commands
  */
-struct builtin_func_list
+struct builtins
 {
 	char *name; /*name of the builtin command */
 
 	int (*func)(void); /*pointer to function*/
-} builtin_func_list;
+} builtins;
 
 #endif

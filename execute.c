@@ -6,19 +6,19 @@
 */
 int execute(char **args)
 {
-	unsigned long int b;
-
+	unsigned long int b;	
+	
 	char *builtin_func_list[] = {
 		"cd",
 		"env",
-		"exit",
-		"help"
+		"help",
+		"exit"
 	};
 	int (*builtins[])(char **) = {
 		&own_cd,
 		&own_env,
 		&own_help,
-		&own_exit,
+		&own_exit
 	};
 	if (args[0] == NULL)
 	{
