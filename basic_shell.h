@@ -12,6 +12,12 @@ extern char **environ;
 #include <stdlib.h>
 #include <sys/wait.h>
 
+/* basic_shell.c */
+int main(void);
+
+/* input_shell */
+void input_shell(void);
+
 /* parse.c */
 char **parse_string(char *line);
 
