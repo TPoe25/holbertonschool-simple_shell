@@ -15,7 +15,7 @@ char *getlinefunc(void)
 	if (getline(&line, &bufsize, stdin)  == -1)
 	{
 	/*input is defined, frees line to avoid leak and system call success*/
-		if (feod(stdin))
+		if (feof(stdin))
 		{
 			free(line);
 			exit(EXIT_SUCCESS);
@@ -24,7 +24,7 @@ char *getlinefunc(void)
 		{
 		free(line);
 		perror("failure");
-		exit(EXIT_FAILURE)
+		exit(EXIT_FAILURE);
 		}
 	}
 	/* returns line */

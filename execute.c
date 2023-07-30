@@ -26,13 +26,13 @@ int execute(char **args)
 	{
 		return (-1);
 	}
-	for (; b < sizeof(builtin_func_list[b]) == 0)
+	for (; (b < sizeof(builtin_func_list[b])) == 0)
 	{
 		if (strcmp(args[0], builtin_func_list[b]) == 0)
 		{
 		return ((*builtins[b])(args));
 		}
 	}
-	return (next_process(args));
+	return (new_process(args));
 
 }
