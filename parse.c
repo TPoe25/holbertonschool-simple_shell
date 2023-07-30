@@ -23,7 +23,8 @@ char **parse_string(char *line)
 	{
 		break;
 	}
-	token[s] = token; /*store the token in the tokens array*/
+
+	tokens[s] = token; /*store the token in the tokens array*/
 	s++;
 	if (s >= bufsize)
 	{ /*reallocate memeory for tokens */
