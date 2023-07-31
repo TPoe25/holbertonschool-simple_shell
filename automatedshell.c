@@ -1,12 +1,12 @@
 #include "basic_shell.h"
 
 /**
- * automated_shell - non interactive shell unix command line interepeter
+ * automatedshell - non interactive shell unix command line interepeter
  *
  * Return: void
  **/
 
-void automated_shell(void)
+void automatedshell(void)
 {
 	char *line;
 	char **args;
