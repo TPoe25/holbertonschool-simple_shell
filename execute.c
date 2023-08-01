@@ -15,10 +15,9 @@ int execute(char **args)
 		"exit"
 	};
 	int (*builtins[])(char **) = {
-		&own_cd,
-		&own_env,
-		&own_help,
-		&own_exit
+		&cust_cd,
+		&cust_env,
+		&cust_exit
 	};
 	if (args[0] == NULL)
 	{

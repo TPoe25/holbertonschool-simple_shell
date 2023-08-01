@@ -36,10 +36,12 @@ char *read_line_stream(void);
 /* automatedshell.c */
 void automatedshell(void);
 
+/* cust_env.c */
+int cust_env(char **args);
+
 /* builtin functions */
-int own_cd(char **args);
-int own_exit(char **args);
-int own_env(char **args);
-int own_help(char **args);
+int cust_cd(char **args);
+int cust_exit(char **args);
+int cust_env(char **args);
 
 #endif
