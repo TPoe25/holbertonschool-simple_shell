@@ -30,4 +30,5 @@ int next_process(char **args)
 			waitpid(pid, &report, WUNTRACED);
 		}	while (!WIFEXITED(report) && !WIFSIGNALED(report));
 	}
+	return (-1);
 }
