@@ -11,15 +11,16 @@
  * @directories: array of strings containing directories to search for the binary
  * Return: 1 on successful execution, 0 otherwise
  */
-int next_process(char **args)
+int next_process(char *argv)
 {
 	pid_t pid;
+	char *args[]= {"/bin/ls", "-l", "/usr/", NULL};
 	int report;
 	pid = fork();
-	
+
 	if (pid == 0)
 	{
-		if (execvp(args[0], args) == -1)
+		if (execve(*args, *argv, NULL) == -1)
 		{
 			perror("error in next_process");
 		}

@@ -13,7 +13,7 @@ int execute(char **args)
 		"env",
 		"exit"
 	};
-	int (*builtins[])(char **) = {
+	int (*builtins[])(char **args) = {
 		&cust_cd,
 		&cust_env,
 		&cust_exit
@@ -30,5 +30,4 @@ int execute(char **args)
 		}
 	}
 	return (next_process(args));
-
 }

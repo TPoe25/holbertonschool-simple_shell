@@ -8,34 +8,33 @@
 /**
  * next_process - creates a new process and executes the given command
  * @args: array of strings containing the command and its arguments
- * @directories: array of strings containing directories to search for the binary
  * Return: 1 on successful execution, 0 otherwise
  */
 int next_process(char **args)
 {
-	pid_t pid;
-	int report;
-	pid = fork();
-	
-	if (pid == 0)
-	{
-		if (execvp(args[0], args) == -1)
-		{
-			perror("error in next_process");
-		}
-		exit(EXIT_FAILURE);
-	}
+    pid_t pid;
+    int report;
 
-	else if (pid < 0)
-	{
-		perror("forking: error in next_process");
-	}
-	else
-	{
-		do
-		{
-			waitpid(pid, &report, WUNTRACED);
-		} while (!WIFEXITED(report) && !WIFSIGNALED(report));
-	}
-	return (-1);
+    pid = fork();
+    if (pid == 0)
+    {
+        if (execve(args[0], args, NULL) == -1)
+        {
+            perror("error in next_process");
+        }
+        exit(EXIT_FAILURE);
+    }
+    else if (pid < 0)
+    {
+        perror("forking: error in next_process");
+    }
+    else
+    {
+        do
+        {
+            waitpid(pid, &report, WUNTRACED);
+        } while (!WIFEXITED(report) && !WIFSIGNALED(report));
+    }
+    return (-1);
 }
+

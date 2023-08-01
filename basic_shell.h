@@ -1,8 +1,6 @@
 #ifndef BASIC_SHELL_H
 #define BASIC_SHELL_H
-
 #define TOKEN_DELIM " \t\r\n\a"
-extern char **environ;
 
 #include "structure.h"
 #include <stdio.h>
@@ -11,6 +9,8 @@ extern char **environ;
 #include <stddef.h>
 #include <stdlib.h>
 #include <sys/wait.h>
+
+extern char **environ;
 
 /* basic_shell.c */
 int main(void);
