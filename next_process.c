@@ -11,46 +11,31 @@
  * @directories: array of strings containing directories to search for the binary
  * Return: 1 on successful execution, 0 otherwise
  */
-int next_process(char **args, char **directories)
+int next_process(char **args)
 {
-    pid_t pid;
-    int report;
-    int i;
+	pid_t pid;
+	int report;
+	pid = fork();
+	
+	if (pid == 0)
+	{
+		if (execvp(args[0], args) == -1)
+		{
+			perror("error in next_process");
+		}
+		exit(EXIT_FAILURE);
+	}
 
-    pid = fork();
-    if (pid == 0)
-    {
-        char *full_path = NULL;
-
-        for (i = 0; directories[i] != NULL; i++)
-        {
-            full_path = malloc(strlen(directories[i]) + strlen(args[0]) + 2);
-            if (full_path == NULL)
-            {
-                perror("malloc");
-                exit(EXIT_FAILURE);
-            }
-
-            sprintf(full_path, "%s/%s", directories[i], args[0]);
-
-            execve(full_path, args, environ);
-
-            free(full_path);
-        }
-
-        perror("Command not found");
-        exit(EXIT_FAILURE);
-    }
-    else if (pid < 0)
-    {
-        perror("forking: error in next_process");
-    }
-    else
-    {
-        do
-        {
-            waitpid(pid, &report, WUNTRACED);
-        } while (!WIFEXITED(report) && !WIFSIGNALED(report));
-    }
-    return (-1);
+	else if (pid < 0)
+	{
+		perror("forking: error in next_process");
+	}
+	else
+	{
+		do
+		{
+			waitpid(pid, &report, WUNTRACED);
+		} while (!WIFEXITED(report) && !WIFSIGNALED(report));
+	}
+	return (-1);
 }
