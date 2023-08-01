@@ -7,12 +7,13 @@
 int execute(char **args)
 {
 	unsigned long int b;
+
 	char *builtin_func_list[] = {
-	"cd",
-	"env",
-	"exit"
+		"cd",
+		"env",
+		"exit"
 	};
-	int (*builtins[])(char **) = {
+	int (*builtins[])(char **args) = {
 		&cust_cd,
 		&cust_env,
 		&cust_exit
@@ -21,12 +22,11 @@ int execute(char **args)
 	{
 		return (-1);
 	}
-	
 	for (b = 0; b < sizeof(builtin_func_list) / sizeof(char *); b++)
 	{
 		if (strcmp(args[0], builtin_func_list[b]) == 0)
 		{
-			return ((*builtins[b])(args));
+		return ((*builtins[b])(args));
 		}
 	}
 	return (next_process(args));
