@@ -12,8 +12,6 @@ void automatedshell(void)
 	char **args;
 	int report = -1;
 
-	setenv("PATH", "/usr/bin:/bin", 1);
-
 	do {
 		line = read_line_stream();
 		args = parse_string(line);
