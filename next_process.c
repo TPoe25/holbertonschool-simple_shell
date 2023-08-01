@@ -18,7 +18,7 @@ int next_process(char **args)
 		}
 		exit(EXIT_FAILURE);
 	}
-	else if (pid > 0)
+	else if (pid < 0)
 	{
 		perror("forking: error in next_process");
 	}
