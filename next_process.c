@@ -12,19 +12,11 @@ int next_process(char **args)
 	pid = fork();
 	if (pid == 0)
 	{
-		if (access(args[0], X_OK) == 0)
-		{
 		if (execvp(args[0], args) == -1)
 		{
 			perror("error in next_process");
 		}
 		exit(EXIT_FAILURE);
-	}
-	else
-	{
-		fprintf(stderr, "./hsh: 1: %s: not found\n", args[0]);
-		exit(127);
-	}
 	}
 	else if (pid < 0)
 	{
@@ -38,5 +30,4 @@ int next_process(char **args)
 			waitpid(pid, &report, WUNTRACED);
 		}	while (!WIFEXITED(report) && !WIFSIGNALED(report));
 	}
-	return (-1);
 }
