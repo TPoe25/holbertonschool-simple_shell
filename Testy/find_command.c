@@ -12,11 +12,11 @@ char *find_command(char *command)
 	char *path_tok = strtok(path_env, ":");
 	int len = strlen(path_tok) + strlen(command) + 2;
 
-	if (path_env != NULL)
+	if (path_env)
 	{
-		while (path_tok != NULL)
+		while (dir)
 		{
-			find_command = malloc(len);
+			find_command = malloc(strlen(dir) + strlen(args[0]) + 2);
 			if (find_command == NULL)
 			{
 				perror ("malloc failed");
@@ -32,4 +32,4 @@ char *find_command(char *command)
 			return (find_command);
 }
 
-		
+		i
