@@ -7,7 +7,7 @@
 int cust_env(char **args)
 {
 	int i = 0;
-	(void)(**args);
+	(void)(**args); /* unused variable */
 
 	while (environ[i])
 	{
