@@ -1,7 +1,6 @@
 #ifndef BASIC_SHELL_H
 #define BASIC_SHELL_H
 
-#define PATH "/bin"
 #define TOKEN_DELIM " \t\r\n\a"
 extern char **environ;
 
@@ -39,6 +38,9 @@ void automatedshell(void);
 
 /* cust_env.c */
 int cust_env(char **args);
+
+/* find_command.c */
+char *find_command(char *command);
 
 /* builtin functions */
 int cust_cd(char **args);
