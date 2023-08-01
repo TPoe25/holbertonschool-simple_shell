@@ -4,32 +4,33 @@
  *
  *
 */
-char *find_command(char *command)
+char *full_path(char *args)
 {
-	char *find_command = NULL;
-	char *path_env = getenv("PATH");
-	char *dir = strtok(path_env, ":");
-	char *path_tok = strtok(path_env, ":");
-	int len = strlen(path_tok) + strlen(command) + 2;
+	char *full_path = NULL;
+	char *path = getenv("PATH");
+	char *dir = strtok(path, ":");
+	int found = 0;
 
-	if (path_env)
+	if (path)
 	{
 		while (dir)
 		{
-			find_command = malloc(strlen(dir) + strlen(args[0]) + 2);
-			if (find_command == NULL)
+			full_path = malloc(strlen(dir) + strlen(args[0]) + 2);
+			if (full_path == NULL)
 			{
-				perror ("malloc failed");
-				exit (EXIT_FAILURE);
+				perror("malloc failed");
+				return (NULL);
 			}
-			snprintf(find_command, len, %s/%s, path_tok, command);
-			if (access(find_command, X_OK) == 0)
+			sprintf(full_path, "%s/%s", dir, args[0]);
+			if (access(full_path, X_OK) == 0)
+			{
+				found = 1;
 				break;
-			free(find_command == NULL;
-				path_tok = strtok(NULL, ":");
+			}
+			free(full_path);
+			full_path = NULL;
+			dir = strtok(NULL, ":");
 			}
 	}
-			return (find_command);
+			return (NULL);
 }
-
-		i
