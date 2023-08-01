@@ -19,5 +19,5 @@ int cust_cd(char **args)
 			perror("error while changing directory\n");
 		}
 	}
-	return (-1);
+	return (0);
 }

@@ -13,7 +13,7 @@ struct builtins
 {
 	char *name; /*name of the builtin command */
 
-	int (*func)(void); /*pointer to function*/
+	int (*func)(char **); /*pointer to function*/
 } builtins;
 
 #endif
