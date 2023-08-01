@@ -34,7 +34,7 @@ int next_process(char **args);
 char *read_line_stream(void);
 
 /* automatedshell.c */
-void automatedshell(char **commands);
+void automatedshell(void);
 
 /* cust_env.c */
 int cust_env(char **args);
