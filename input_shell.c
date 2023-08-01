@@ -2,7 +2,7 @@
 
 /**
  * input_shell - shell process that recieves input to line and prints output
- * 
+ *
  * Return: void
  **/
 
@@ -25,6 +25,5 @@ void input_shell(void)
 		{
 			exit(report);
 		}
-	}
-	while (report == -1);
+	} while (report == -1);
 }
