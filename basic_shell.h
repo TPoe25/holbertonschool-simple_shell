@@ -28,7 +28,7 @@ char *getlinefunc(void);
 int execute(char **args);
 
 /* next_process.c */
-int next_process(char **args);
+int next_process(char **args, char **directories);
 
 /* stream.c  */
 char *read_line_stream(void);
