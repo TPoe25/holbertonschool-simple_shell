@@ -1,6 +1,7 @@
 #ifndef BASIC_SHELL_H
 #define BASIC_SHELL_H
 
+#define PATH "/bin"
 #define TOKEN_DELIM " \t\r\n\a"
 extern char **environ;
 
