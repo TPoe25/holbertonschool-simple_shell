@@ -8,15 +8,18 @@ int next_process(char **args)
 {
 	pid_t pid;
 	int report;
+	char *full_path = search_path(args);
 
+	if (full_path)
+	{
 	pid = fork();
 	if (pid == 0)
 	{
-		if (execvp(args[0], args) == -1)
+		if (execve(full_path, args, environ) == -1)
 		{
 			perror("error in next_process");
 		}
-		exit(EXIT_FAILURE);
+		free(full_path);
 	}
 	else if (pid < 0)
 	{
@@ -31,4 +34,10 @@ int next_process(char **args)
 		}	while (!WIFEXITED(report) && !WIFSIGNALED(report));
 	}
 	return (-1);
-}
+	}
+	else 
+	{
+	fprintf(stderr, "./hsh :1 %s: not found \n", args[0]);
+	return (127);
+	}
+

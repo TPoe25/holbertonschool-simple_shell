@@ -4,11 +4,12 @@
  *
  *
 */
-char *find_command(char *command)
+char *full_path(char *args)
 {
 	char *full_path = NULL;
 	char *path = getenv("PATH");
-	char *dir = strtok(path_env, ":");
+	char *dir = strtok(path, ":");
+	int found = 0;
 
 	if (path)
 	{
@@ -23,7 +24,8 @@ char *find_command(char *command)
 			sprintf(full_path, "%s/%s", dir, args[0]);
 			if (access(full_path, X_OK) == 0)
 			{
-				return (full_path);
+				found = 1;
+				break;
 			}
 			free(full_path);
 			full_path = NULL;
@@ -32,5 +34,3 @@ char *find_command(char *command)
 	}
 			return (NULL);
 }
-
-		i
