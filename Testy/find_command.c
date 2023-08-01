@@ -8,6 +8,7 @@ char *find_command(char *command)
 {
 	char *find_command = NULL;
 	char *path_env = getenv("PATH");
+	char *dir = strtok(path_env, ":");
 	char *path_tok = strtok(path_env, ":");
 	int len = strlen(path_tok) + strlen(command) + 2;
 
