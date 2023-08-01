@@ -1,11 +1,9 @@
 #include "basic_shell.h"
-
 /**
- * next_process - creates a new process and executes give command
- * @args: array of strings containing comand and its args
- * Return: 1 on success, 0 otherwise
- **/
-
+ *next_process - creates a new process and executes the givven command
+ *@args: array of strings containing the command and its arguments
+ *Return: 1 on successful execution, 0 otherwise
+*/
 int next_process(char **args)
 {
 	pid_t pid;
@@ -14,8 +12,7 @@ int next_process(char **args)
 	pid = fork();
 	if (pid == 0)
 	{
-		char *env[] = {NULL};
-		if (execve(args[0], args, env) == -1)
+		if (execvp(args[0], args) == -1)
 		{
 			perror("error in next_process");
 		}
@@ -28,9 +25,10 @@ int next_process(char **args)
 	else
 	{
 		do
+
 		{
 			waitpid(pid, &report, WUNTRACED);
-		} while (!WIFEXITED(report) && !WIFSIGNALED(report));
+		}	while (!WIFEXITED(report) && !WIFSIGNALED(report));
 	}
 	return (-1);
 }
