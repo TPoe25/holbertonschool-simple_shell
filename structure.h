@@ -1,7 +1,6 @@
 #ifndef STRUCTURE_H
 #define STRUCTURE_H
 
-#include "basic_shell.h"
 #include <stddef.h>
 
 /**
@@ -12,8 +11,7 @@
 struct builtins
 {
 	char *name; /*name of the builtin command */
-
 	int (*func)(char **); /*pointer to function*/
-} builtins;
+};
 
 #endif
