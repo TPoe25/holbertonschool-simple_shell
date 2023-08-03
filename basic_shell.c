@@ -8,13 +8,15 @@
 
 int main(void)
 {
+	char *directories[] = {"/bin", "/usr/bin", "./bin", NULL};
+
 	if (isatty(STDIN_FILENO) == 1)
 	{
-		input_shell();
+		input_shell(directories);
 	}
 	else
 	{
-		automatedshell();
+		automatedshell(directories);
 	}
 	return (0);
 }

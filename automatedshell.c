@@ -6,7 +6,7 @@
  * Return: void
  **/
 
-void automatedshell(void)
+void automatedshell(char **directories)
 {
 	char *line;
 	char **args;
@@ -15,7 +15,7 @@ void automatedshell(void)
 	do {
 		line = read_line_stream();
 		args = parse_string(line);
-		report = execute(args);
+		report = execute(args, directories);
 
 		free(line);
 		free(args);

@@ -6,7 +6,7 @@
  * Return: void
  **/
 
-void input_shell(void)
+void input_shell(char **directories)
 {
 	char *line;
 	char **args;
@@ -16,7 +16,7 @@ void input_shell(void)
 		printf("Basic_$hell: ");
 		line = read_line_stream();
 		args = parse_string(line);
-		report = execute(args);
+		report = execute(args, directories);
 
 		free(line);
 		free(args);

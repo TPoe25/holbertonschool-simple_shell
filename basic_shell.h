@@ -16,7 +16,7 @@ extern char **environ;
 int main(void);
 
 /* input_shell */
-void input_shell(void);
+void input_shell(char **directories);
 
 /* parse.c */
 char **parse_string(char *line);
@@ -25,22 +25,22 @@ char **parse_string(char *line);
 char *getlinefunc(void);
 
 /* execute.c */
-int execute(char **args);
+int execute(char **args, char **directories);
 
 /* next_process.c */
-int next_process(char **args);
+int next_process(char **args, char **directories);
+
+/* find_command.c */
+char *find_command(const char *command, char **directories);
 
 /* stream.c  */
 char *read_line_stream(void);
 
 /* automatedshell.c */
-void automatedshell(void);
+void automatedshell(char **directories);
 
 /* cust_env.c */
 int cust_env(char **args);
-
-/* find_command.c */
-char *find_command(char *command);
 
 /* builtin functions */
 int cust_cd(char **args);
