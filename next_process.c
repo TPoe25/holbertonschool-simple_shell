@@ -1,10 +1,10 @@
 #include "basic_shell.h"
 
 /**
- * next_process - starts a new process
- * args: arguments
- * directories: directories
- * Return: 0 successful 
+ * next_process - find and execute next process in dir
+ * @args: array of strings containing command and its args
+ * @directories: array of strings conating directories to search for bin
+ * Return: 0 successful
  **/
 
 int next_process(char **args, char **directories)
