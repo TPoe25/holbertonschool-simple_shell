@@ -14,7 +14,7 @@
 extern char **environ;
 
 /* basic_shell.c */
-int main(void);
+int main(int argc, char *argv[] __attribute__((unused)));
 
 /* input_shell */
 void input_shell(char **directories);
