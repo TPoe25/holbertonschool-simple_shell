@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <sys/wait.h>
 
+/* enviorment macro */
 extern char **environ;
 
 /* basic_shell.c */
