@@ -16,13 +16,10 @@
 extern char **environ;
 
 /* basic_shell.c */
-int main(int argc __attribute__((unused)), char *argv[] __attribute__((unused)));
+int main(void);
 
 /* input_shell */
 void input_shell(char **directories);
-
-/* copy_file.c */
-int copy_file(const char *source_path, const char *dest_path);
 
 /* parse.c */
 char **parse_string(char *line);
@@ -35,9 +32,6 @@ int execute(char **args, char **directories);
 
 /* next_process.c */
 int next_process(char **args, char **directories);
-
-/* find_command.c */
-char *find_command(const char *command, char **directories);
 
 /* stream.c  */
 char *read_line_stream(void);
