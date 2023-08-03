@@ -11,38 +11,39 @@
  * @directories: array of strings containing directories to search for the binary
  * Return: 1 on successful execution, 0 otherwise
  */
-int next_process(char **args, char **directories)
-{
-    pid_t pid;
+int next_process(char **args, char **directories) {
     int report;
-
+    char *command_path = find_command(args[0], directories);
+    pid_t pid;
     pid = fork();
-    if (pid == 0)
-    {
-        char *full_path = find_command(args[0], directories);
-        if (full_path == NULL)
-        {
-            fprintf(stderr, "Command not found: %s\n", args[0]);
-            exit(EXIT_FAILURE);
-        }
 
-        if (execv(full_path, args) == -1)
-        {
+	if (strcmp(args[0], "cp") == 0) {
+        if (args[1] == NULL || args[2] == NULL) {
+            printf("Usage: cp <source_file> <destination_file>\n");
+            return 0;
+        }
+        if (copy_file(args[1], args[2]) == 0) {
+            printf("File copied successfully.\n");
+        } else {
+            printf("Failed to copy file.\n");
+        }
+        return 0;
+    }
+    if (command_path == NULL) {
+        printf("Command not found: %s\n", args[0]);
+        return 0;
+    }
+    if (pid == 0) {
+        if (execve(command_path, args, environ) == -1) {
             perror("Error in next_process");
         }
-        free(full_path); /* Free allocated memory for full_path */
         exit(EXIT_FAILURE);
-    }
-    else if (pid < 0)
-    {
-        perror("Forking: Error in next_process");
-    }
-    else
-    {
-        do
-        {
+    } else if (pid < 0) {
+        perror("forking: error in next_process");
+    } else {
+        do {
             waitpid(pid, &report, WUNTRACED);
-        } while (!WIFEXITED(report) && !WIFSIGNALED(report));
+        } while (!WIFEXITED(report) && !WIFSIGNALED(report)); 
     }
-    return (-1);
+    return 0;
 }

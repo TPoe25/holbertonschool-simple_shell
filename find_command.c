@@ -1,48 +1,43 @@
+#include "basic_shell.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
 
-/**
- * find_command - searches for the full path of a command in the specified directories
- * @command: the command to search for
- * @directories: array of strings containing directories to search for the command
- * Return: the full path of the command if found, NULL otherwise
- */
-char *find_command(const char *command, char **directories)
-{
-	int i = 0, j = 0;
-	size_t command_len = strlen(command);
-	size_t k;
+char *find_command(const char *command, char **directories) {
+    size_t i;
+    
+    /* Check if the command is an absolute or relative path */
+    if (strchr(command, '/') != NULL) {
+        /* Command is an absolute or relative path */
+        if (access(command, X_OK) == 0) {
+            return strdup(command);
+        }
+    } else {
+        /* Command is not an absolute or relative path, search in directories */
+        for (i = 0; directories[i] != NULL; i++) {
+            size_t dir_len = strlen(directories[i]);
+            size_t command_len = strlen(command);
+            size_t full_path_len = dir_len + 1 + command_len + 1; /* +one for /'///'/ and +one for NULL */
+            char *full_path = (char *)malloc(full_path_len);
 
-	while (directories[i] != NULL)
-	{
-		size_t dir_len = strlen(directories[i]);
-		size_t path_len = dir_len + command_len + 2; /* +two for /'///'/ and null terminator */
-	char *full_path = malloc(path_len);
-	
-	if (full_path == NULL)
-	{
-		perror("Memory allocation error");
-		exit(EXIT_FAILURE);
-	}
+            if (full_path == NULL) {
+                perror("Memory allocation error in find_command");
+                return NULL;
+            }
 
-	for (j = 0; j < (int)dir_len; j++)
-		full_path[j] = directories[i][j];
+            /* Construct the full path */
+            strcpy(full_path, directories[i]);
+            full_path[dir_len] = '/';
+            strcpy(full_path + dir_len + 1, command);
 
-	full_path[j++] = '/';
-	for (k = 0; k < command_len; k++)
-		full_path[j++] = command[k];
+            if (access(full_path, X_OK) == 0) {
+                return full_path;
+            }
 
-	full_path[j] = '\0';
+            free(full_path);
+        }
+    }
 
-	if (access(full_path, X_OK) == 0)
-	{
-		return full_path;
-	}
-
-	free(full_path);
-		i++;
-	}
-	return NULL;
+    return NULL;
 }
+

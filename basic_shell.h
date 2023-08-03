@@ -18,6 +18,9 @@ int main(void);
 /* input_shell */
 void input_shell(char **directories);
 
+/* copy_file.c */
+int copy_file(const char *source_path, const char *dest_path);
+
 /* parse.c */
 char **parse_string(char *line);
 
