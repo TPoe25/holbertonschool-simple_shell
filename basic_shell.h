@@ -34,10 +34,10 @@ int execute(char **args, char **directories);
 int next_process(char **args, char **directories);
 
 /* stream.c  */
-char *read_line_stream(void);
+char *read_line_stream(int interactive);
 
 /* automatedshell.c */
-void automatedshell(char **directories);
+void automated_shell(char **directories, int interactive);
 
 /* cust_env.c */
 int cust_env(char **args);

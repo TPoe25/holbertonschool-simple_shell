@@ -1,37 +1,44 @@
 #include "basic_shell.h"
 /**
- * next_process - find and execute next process in dir
- * @args: array of strings containing command and its args
- * @directories: array of strings conating directories to search for bin
- * Return: 0 successful
- **/
+ * next_process - find and execute the next process in directories
+ * @args: array of strings containing command and its arguments
+ * @directories: array of strings containing directories to search for the binary
+ * Return: 0 if successful, -1 on failure
+ */
 int next_process(char **args, char **directories)
 {
 	char command[1024] = {0};
-	int report;
 	struct stat st;
-	pid_t pid = fork();
+	pid_t pid;
 
+	if (directories == NULL)
+	{
+		fprintf(stderr, "Invalid input: directories is NULL\n");
+		return (-1); }
+	if (args == NULL || args[0] == NULL)
+	{
+		fprintf(stderr, "Invalid input: args is NULL or args[0] is NULL\n");
+		return (-1); }
 	if (args[0][0] == '/' && access(args[0], X_OK) == 0)
-		strcpy(command, args[0]);
-	else
+	{
+		strcpy(command, args[0]); }
+	else 
+	{
 		while (*directories)
 		{
-			char path[1024] = {0};
+			strcpy(command, *directories);
+			strcat(command, "/");
+			strcat(command, args[0]);
 
-			strcat(path, *directories);
-			strcat(path, "/");
-			strcat(path, args[0]);
-
-			if (stat(path, &st) == 0 && st.st_mode & S_IXUSR)
+			if (stat(command, &st) == 0 && st.st_mode & S_IXUSR)
 			{
-				strcpy(command, path);
 				break; }
-			directories++; }
+			directories++; } }
 	if (!command[0])
 	{
 		fprintf(stderr, "Command not found: %s\n", args[0]);
 		return (-1); }
+	pid = fork();
 	if (pid < 0)
 	{
 		perror("fork");
@@ -41,9 +48,11 @@ int next_process(char **args, char **directories)
 		if (execve(command, args, NULL) == -1)
 		{
 			perror("execve");
-			return (-1); } } else
+			return (-1); } }
+	else
 	{
+		int report;
 		waitpid(pid, &report, 0);
-
-		return (report); }
+		return report; }
 	return (0); }
+

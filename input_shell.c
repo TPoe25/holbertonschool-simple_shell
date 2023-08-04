@@ -11,10 +11,12 @@ void input_shell(char **directories)
 	char *line;
 	char **args;
 	int report = -1;
+	int interactive = isatty(STDIN_FILENO);
 
 	do {
-		printf("Basic_$hell: ");
-		line = read_line_stream();
+		if (interactive)
+			printf("Basic_$hell: ");
+		line = read_line_stream(interactive);
 		args = parse_string(line);
 		report = execute(args, directories);
 

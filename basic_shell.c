@@ -15,7 +15,7 @@ int main(void)
 	}
 	else
 	{
-		automatedshell(directories);
+		automated_shell(directories, 0);
 	}
 	return (0);
 }

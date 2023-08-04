@@ -6,15 +6,19 @@
  * Return: void
  **/
 
-void automatedshell(char **directories)
+void automated_shell(char **directories, int interactive)
 {
 	char *line;
 	char **args;
 	int report = -1;
 
 	do {
-		line = read_line_stream();
+		line = read_line_stream(interactive);
 		args = parse_string(line);
+		
+		if (!args[0])
+			continue;
+
 		report = execute(args, directories);
 
 		free(line);
@@ -22,8 +26,10 @@ void automatedshell(char **directories)
 
 		if (report >= 0)
 		{
+			if (!interactive)
+				break;
 			exit(report);
 		}
 	}
-		while (report == -1);
+		while (interactive);
 }
