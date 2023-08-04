@@ -2,7 +2,7 @@
 
 /**
  * automatedshell - non interactive shell unix command line interepeter
- *
+ * @directories: an array of strings representing directories
  * Return: void
  **/
 

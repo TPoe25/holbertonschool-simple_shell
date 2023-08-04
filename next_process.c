@@ -1,5 +1,4 @@
 #include "basic_shell.h"
-
 /**
  * next_process - find and execute next process in dir
  * @args: array of strings containing command and its args
@@ -19,6 +18,7 @@ int next_process(char **args, char **directories)
 		while (*directories)
 		{
 			char path[1024] = {0};
+
 			strcat(path, *directories);
 			strcat(path, "/");
 			strcat(path, args[0]);
