@@ -6,7 +6,6 @@
  * @directories: array of strings conating directories to search for bin
  * Return: 0 successful
  **/
-
 int next_process(char **args, char **directories)
 {
 	char command[1024] = {0};
@@ -20,8 +19,9 @@ int next_process(char **args, char **directories)
 		while (*directories)
 		{
 			char path[1024] = {0};
-
-			strcat(strcat(strcat(path, *directories). "/"), args[0]);
+			strcat(path, *directories);
+			strcat(path, "/");
+			strcat(path, args[0]);
 
 			if (stat(path, &st) == 0 && st.st_mode & S_IXUSR)
 			{
