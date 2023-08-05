@@ -1,35 +1,26 @@
 #include "basic_shell.h"
 
 /**
- * automatedshell - non interactive shell unix command line interepeter
+ * automated_shell - automated shell process that reads commands from a file
  * @directories: an array of strings representing directories
  * Return: void
  **/
-
-void automated_shell(char **directories, int interactive)
+void automated_shell(void)
 {
 	char *line;
 	char **args;
 	int report = -1;
 
-	do {
-		line = read_line_stream(interactive);
+	while ((line = read_line_stream(0)))
+	{
 		args = parse_string(line);
-		
-		if (!args[0])
-			continue;
-
-		report = execute(args, directories);
-
+		report = next_process(args);
 		free(line);
 		free(args);
 
 		if (report >= 0)
 		{
-			if (!interactive)
-				break;
 			exit(report);
 		}
 	}
-		while (interactive);
 }

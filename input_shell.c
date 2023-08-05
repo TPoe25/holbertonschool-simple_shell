@@ -1,24 +1,26 @@
 #include "basic_shell.h"
 
 /**
- * input_shell - shell process that receives input to line and prints output
- * @directories: array of str containing directories to search for the binary
- *
- * Return: void
+ * input_shell - interactive mode
+ * @directories: array of args
  **/
-void input_shell(char **directories)
+
+void input_shell(void)
 {
 	char *line;
 	char **args;
 	int report = -1;
-	int interactive = isatty(STDIN_FILENO);
 
 	do {
-		if (interactive)
-			printf("Basic_$hell: ");
-		line = read_line_stream(interactive);
+		printf("Basic $hell: ");
+		line = read_line_stream(1);
+		if (line == NULL)
+		{
+			break;
+		}
+
 		args = parse_string(line);
-		report = execute(args, directories);
+		report = execute(args);
 
 		free(line);
 		free(args);

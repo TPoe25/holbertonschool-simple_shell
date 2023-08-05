@@ -3,9 +3,8 @@
 /**
  * cust_exit - terminates normal process
  * @args: empty arguments
- * Return: 0 to terminate the current process
+ * Return: -two to indicate that the shell should not exit
  **/
-
 int cust_exit(char **args)
 {
 	if (args[1])
@@ -14,6 +13,6 @@ int cust_exit(char **args)
 	}
 	else
 	{
-		return (0);
+		return (-2); /* Return -two to indicate that the shell should not exit */
 	}
 }

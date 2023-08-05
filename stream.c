@@ -1,49 +1,48 @@
 #include "basic_shell.h"
-
 /**
  * read_line_stream - reads a line from the stream
- * @interactive: flag telling whether the shell is running in interactive mode
- * Return: pointer that points to line read
+ * @interactive: 1 if running in interactive mode, 0 otherwise
+ * Return: pointer that points to line read or NULL on end of input
  */
 char *read_line_stream(int interactive)
 {
-	int bufsize = 1024;
-	int stream = 0;
-	char *line = malloc(sizeof(char) * bufsize);
-	int symbol;
+	char *line = NULL;
+	size_t bufsize = 0;
+	ssize_t chars_read;
+	int c;
+	size_t stream = 0;
 
-	if (line == NULL)
+	if (interactive)
 	{
-		fprintf(stderr, "error allocating in read_line_stream");
-		exit(EXIT_FAILURE);
-	}
-	while (1)
-	{
-		symbol = getchar();
-		if (symbol == EOF)
+		chars_read = getline(&line, &bufsize, stdin);
+		if (chars_read == -1 && feof(stdin))
 		{
-			if (interactive)
-			{
-				putchar('\n');
-			}
 			free(line);
-			exit(EXIT_SUCCESS);
-		}
-		else if (symbol == '\n')
+			return (NULL); /* End of input in interactive mode */ } }
+	else
+	{
+		while ((c = getchar()) != EOF)
 		{
-			line[stream] = '\0';
-			return (line);
-		}
-		line[stream] = symbol;
-		stream++;
-		if (stream >= bufsize)
-		{
-			bufsize += 1024;
-			line = realloc(line, bufsize);
-			if (line == NULL)
+			if (c == '\n')
 			{
-				fprintf(stderr, "error reallocating in read_line_stream");
+				line[stream++] = c;
+				break; /* End of line in non-interactive mode */ }
+			line = realloc(line, bufsize + 1);
+			if (!line)
+			{
+				perror("allocation error in stream");
 				exit(EXIT_FAILURE); }
-		}
-	}
-	return (line); }
+			line[stream++] = c;
+			bufsize++; }
+		if (stream == 0 && c == EOF)
+		{
+			free(line);
+			return (NULL); /* End of input in non-interactive mode */ }
+		line = realloc(line, bufsize + 1);
+		if (!line)
+		{
+			perror("allocation error in stream");
+			exit(EXIT_FAILURE); }
+		line[stream] = '\0'; }
+	return (line);
+}

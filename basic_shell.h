@@ -19,7 +19,7 @@ extern char **environ;
 int main(void);
 
 /* input_shell */
-void input_shell(char **directories);
+void input_shell(void);
 
 /* parse.c */
 char **parse_string(char *line);
@@ -28,19 +28,19 @@ char **parse_string(char *line);
 char *getlinefunc(void);
 
 /* execute.c */
-int execute(char **args, char **directories);
+int execute(char **args);
 
 /* next_process.c */
-int next_process(char **args, char **directories);
+int next_process(char **args);
+
+/* execute_process.c */
+int execute_process(char *command, char **args);
 
 /* stream.c  */
 char *read_line_stream(int interactive);
 
 /* automatedshell.c */
-void automated_shell(char **directories, int interactive);
-
-/* cust_env.c */
-int cust_env(char **args);
+void automated_shell(void);
 
 /* builtin functions */
 int cust_cd(char **args);

@@ -1,21 +1,19 @@
 #include "basic_shell.h"
 
 /**
- * main - main function
+ * main - function to run shell to get output
  *
- * Return: always 0 success
+ * Return: Always 0 success
  **/
 int main(void)
 {
-	char *directories[] = {"/bin", "/usr/bin", "./bin", NULL};
-
 	if (isatty(STDIN_FILENO))
 	{
-		input_shell(directories);
+		input_shell();
 	}
 	else
 	{
-		automated_shell(directories, 0);
+		automated_shell();
 	}
 	return (0);
 }
