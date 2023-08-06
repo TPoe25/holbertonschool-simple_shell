@@ -18,12 +18,12 @@ char *getlinefunc(void)
 		if (feof(stdin))
 		{
 			free(line);
-			exit(EXIT_SUCCESS);
+			return NULL;
 		} /* if input is not defined, frees line to avoid leak and call failure  */
 		else
 		{
 		free(line);
-		perror("failure");
+		perror("getlinefunc");
 		exit(EXIT_FAILURE);
 		}
 	}

@@ -10,19 +10,16 @@ char **parse_string(char *line)
 	int bufsize = 64;
 	int s = 0;
 	char **tokens = malloc(bufsize * sizeof(char *));
-	char *token = strtok(line, TOKEN_DELIM);
+	char *token;
 
 	if (!tokens)
 	{
 		fprintf(stderr, "allocation error in parse.\n");
 		exit(EXIT_FAILURE);
 	}
+	token = strtok(line, TOKEN_DELIM);
 	while (token != NULL)
 	{
-		if (token[0] == '#')
-		{
-			break;
-		}
 		tokens[s] = token;
 		s++;
 		if (s >= bufsize)

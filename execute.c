@@ -30,5 +30,6 @@ int execute(char **args)
 			return ((*builtins[b])(args));
 		}
 	}
-	return (next_process(args));
+	fprintf(stderr, "command not found: %s\n", args[0]);
+	return (-1);
 }

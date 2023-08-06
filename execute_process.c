@@ -1,34 +1,36 @@
 #include "basic_shell.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-
 /**
- * execute_process - executes commands for new process
- * @command: commands passed
- * @args: arguments passed
+ * execute_process - executes commands for a new process
+ * @command: The full path of the command to execute
+ * @args: arguments passed to command
  * @envList: array of strings containing the environment variables
  * Return: -1 for next
  **/
 int execute_process(char *command, char **args, char **envList)
 {
 	pid_t pid = fork();
-	int report;
-	char **argList = malloc(2 * sizeof(char *));
+	int report, i;
+	int num_args = 0;
+	char **argList = NULL;
 
-	if (!argList)
-	{
-		perror("malloc");
-		return (-1); }
 	if (pid < 0)
 	{
 		perror("fork");
-		return (-1);
-	}
+		return (-1); }
 	else if (pid == 0)
 	{
-		argList[0] = args[0];
-		argList[1] = NULL;
+		while (args[num_args])
+			num_args++;
+		argList = malloc((num_args + 1) * sizeof(char *));
+		if (!argList)
+		{
+			perror("malloc");
+			return (-1);
+		}
+		for (i = 0; i < num_args; i++)
+		{
+			argList[i] = args[i]; }
+		argList[num_args] = NULL;
 
 		if (execve(command, argList, envList) == -1)
 		{
@@ -36,12 +38,12 @@ int execute_process(char *command, char **args, char **envList)
 			free(argList);
 			return (-1);
 		}
-		free(argList);
 	}
 	else
 	{
 		waitpid(pid, &report, 0);
-		return (report);
-	}
+		free(argList);
+		return (report); }
 	return (-1);
 }
+

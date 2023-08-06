@@ -1,8 +1,6 @@
 #ifndef BASIC_SHELL_H
 #define BASIC_SHELL_H
-#define TOKEN_DELIM " \t\r\n\a"
 
-#include "structure.h"
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
@@ -12,13 +10,13 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-/* enviorment macro */
-extern char **environ;
+/* execute.c */
+int execute(char **args);
 
 /* basic_shell.c */
 int main(void);
 
-/* input_shell */
+/* input_shell.c */
 void input_shell(void);
 
 /* parse.c */
@@ -27,24 +25,27 @@ char **parse_string(char *line);
 /* getlinefunc.c */
 char *getlinefunc(void);
 
-/* execute.c */
-int execute(char **args);
+/* read_line_stream */
+char *read_line_stream(int interactive);
 
 /* next_process.c */
 int next_process(char **args);
 
 /* execute_process.c */
-int execute_process(char *command, char **args);
-
-/* stream.c  */
-char *read_line_stream(int interactive);
+int execute_process(char *command, char **args, char **envList);
 
 /* automatedshell.c */
 void automated_shell(void);
 
+/* Define macros and constants */
+#define TOKEN_DELIM " \t\r\n\a"
+
+/* Declare global variables */
+extern char **environ;
+
 /* builtin functions */
 int cust_cd(char **args);
 int cust_exit(char **args);
-int cust_env(char **args);
+int cust_env(char ** args);
 
-#endif
+#endif /* BASIC_SHELL_H */

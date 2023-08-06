@@ -1,8 +1,7 @@
 #include "basic_shell.h"
 
 /**
- * input_shell - interactive mode
- * @directories: array of args
+ * input_shell - interactive mode for the shell
  **/
 
 void input_shell(void)
@@ -10,7 +9,6 @@ void input_shell(void)
 	char *line;
 	char **args;
 	int report = -1;
-
 	do {
 		printf("Basic $hell: ");
 		line = read_line_stream(1);
@@ -25,9 +23,5 @@ void input_shell(void)
 		free(line);
 		free(args);
 
-		if (report >= 0)
-		{
-			exit(report);
-		}
-	} while (report == -1);
+	} while ((report = -1));
 }

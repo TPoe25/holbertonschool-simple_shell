@@ -2,7 +2,6 @@
 
 /**
  * automated_shell - automated shell process that reads commands from a file
- * @directories: an array of strings representing directories
  * Return: void
  **/
 void automated_shell(void)
@@ -14,7 +13,7 @@ void automated_shell(void)
 	while ((line = read_line_stream(0)))
 	{
 		args = parse_string(line);
-		report = next_process(args);
+		report = execute(args);
 		free(line);
 		free(args);
 
