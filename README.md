@@ -147,10 +147,7 @@ Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simpl
 </code></pre>
 <h2 id="usage">Usage</h2>
 <h3 id="built-ins">Built ins</h3>
--[] cd 
--[] env
--[] exit
--[] 
+
 
 <h3 id="examples">Examples</h3>
 <ul>
@@ -169,6 +166,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQxNzE4NzYsMTg5MDU0NDMyNSwyMD
-E5MTE3ODBdfQ==
+eyJoaXN0b3J5IjpbODQ1MTE2Mjg0LDE4OTA1NDQzMjUsMjAxOT
+ExNzgwXX0=
 -->
