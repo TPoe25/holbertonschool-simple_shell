@@ -79,7 +79,7 @@
 <thead>
 <tr>
 <th align="center">Name</th>
-<th align="r">Description</th>
+<th align="center">Description</th>
 </tr>
 </thead>
 <tbody>
@@ -164,6 +164,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQ4MjgyODQsMTg5MDU0NDMyNSwyMD
-E5MTE3ODBdfQ==
+eyJoaXN0b3J5IjpbMjA5MzcwMzgxMywxODkwNTQ0MzI1LDIwMT
+kxMTc4MF19
 -->
