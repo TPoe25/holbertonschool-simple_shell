@@ -14,62 +14,62 @@
 <thead>
 <tr>
 <th align="center">Name</th>
-<th align="right">Description</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="center">basic_shell.h</td>
-<td align="right">The main header file. </td>
+<td align="left">The main header file. </td>
 </tr>
 <td align="center">structure.h</td>
-<td align="right">Structure for builtin commands</td>
+<td align="">Structure for builtin commands</td>
 <tr>
 <td align="center">basic_shell.c</td>
-<td align="right">Main function for the shell. Interactive or non interactive.</td>
+<td align="left">Main function for the shell. Interactive or non interactive.</td>
 </tr>
 <tr>
 <td align="center">input_shell.c</td>
-<td align="right">Interactive shell process that reads input and prints output</td>
+<td align="left">Interactive shell process that reads input and prints output</td>
 </tr>
 <tr>
 <td align="center">automatedshell.c</td>
-<td align="right">Non interactive shell that interprets Unix command line input.</td>
+<td align="left">Non interactive shell that interprets Unix command line input.</td>
 </tr>
 <tr>
 <td align="center">stream.c</td>
-<td align="right">Reads lines from the stream.</td>
+<td align="left">Reads lines from the stream.</td>
 </tr>
 <tr>
 <td align="center">getline.c</td>
-<td align="right">Defines function to read input lines.</td>
+<td align="left">Defines function to read input lines.</td>
 </tr1</td>
 </tr>
 <td align="center">parse.c</td>
-<td align="right">Splits a string into multiple tokens.</td>
+<td align="left">Splits a string into multiple tokens.</td>
 <tr>
 <td align="center">execute.c</td>
-<td align="right">Executes commands, both custom built-ins and external programs</td>
+<td align="left">Executes commands, both custom built-ins and external programs</td>
 </tr>
 <tr>
 <td align="center">next_process.c</td>
-<td align="right">Creates a new process</td>
+<td align="left">Creates a new process</td>
 </tr>
 <tr>
 <td align="center">cust_cd.c</td>
-<td align="right">Command to change the working directory</td>
+<td align="left">Command to change the working directory</td>
 </tr>
 <tr>
 <td align="center">cust_env.c</td>
-<td align="right">Command to print environmental variables</td>
+<td align="left">Command to print environmental variables</td>
 </tr>
 <tr>
 <td align="center">cust_cd.c</td>
-<td align="right">Command to change the working directory</td>
+<td align="left">Command to change the working directory</td>
 </tr>
 <tr>
 <td align="center">cust_exit.c</td>
-<td align="right">Command to terminate the shell.</td>
+<td align="left">Command to terminate the shell.</td>
 </tr>
 <tr>
 </tbody>
@@ -112,6 +112,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcwNzc3MDQ3LDE4OTA1NDQzMjUsMjAxOT
+eyJoaXN0b3J5IjpbODkwMTI4Mjk5LDE4OTA1NDQzMjUsMjAxOT
 ExNzgwXX0=
 -->
