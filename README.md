@@ -147,20 +147,19 @@ Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simpl
 </code></pre>
 <h2 id="usage">Usage</h2>
 <h3 id="built-ins">Built ins</h3>
--[] cd
+
 <tr>
--[] env
 </tr>
 
- - [ ] 
- - [ ] 
- - [ ] List item
+ - [ ] cd
+ - [ ] env
+ - [ ] exit
 
 <h3 id="examples">Examples</h3>
 <ul>
 <li>
  Run in Interactive Mode</li>
-
+in
 
  - Run in Non-interactive Mode</li>
 </ul>
@@ -174,6 +173,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNDUwNDIzNSwxNDk4OTQ2MjYsMTAwMD
+eyJoaXN0b3J5IjpbMjAzMDg3Nzc1MSwxNDk4OTQ2MjYsMTAwMD
 gzOTMyOSwxODkwNTQ0MzI1LDIwMTkxMTc4MF19
 -->
