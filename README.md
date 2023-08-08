@@ -56,10 +56,6 @@
 <td align="left">Creates a new process</td>
 </tr>
 <tr>
-<td align="center">cust_cd.c</td>
-<td align="left">Command to change the working directory</td>
-</tr>
-<tr>
 <td align="center">cust_env.c</td>
 <td align="left">Command to print environmental variables</td>
 </tr>
@@ -157,8 +153,8 @@ Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simpl
 
 <h3 id="examples">Examples</h3>
 <ul>
-<li>
- Run in Interactive Mode</li>
+
+ Run in Interactive Mode:</li>
 Interactive mode <pre><code>.root@14af6dc6f829:/holbertonschool-simple_shell# ls -l  
 total 108  
 -rw-r--r-- 1 root root 285 Aug 7 21:45 AUTHORS  
@@ -180,7 +176,7 @@ total 108
 -rw-r--r-- 1 root root 988 Aug 7 21:05 stream.c  
 -rw-r--r-- 1 root root 359 Aug 7 21:05 structure.h</code></pre>
 
- Run in Non-interactive Mode
+ Run in Non-interactive Mode:
  Non interactive mode <pre><code>root@14af6dc6f829:/holbertonschool-simple_shell# echo “/bin/ls” | ./hsh  
 AUTHORS  cust_cd.c getline.c next_process.c stream.c  
 automatedshell.c cust_env.c giterdone parse.c  structure.h  
@@ -196,6 +192,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODM1NDg2MiwxNDk4OTQ2MjYsMTAwMD
-gzOTMyOSwxODkwNTQ0MzI1LDIwMTkxMTc4MF19
+eyJoaXN0b3J5IjpbLTMyOTMwMjM5LDE0OTg5NDYyNiwxMDAwOD
+M5MzI5LDE4OTA1NDQzMjUsMjAxOTExNzgwXX0=
 -->
