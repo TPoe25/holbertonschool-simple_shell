@@ -33,7 +33,7 @@
 <td align="right">Interactive shell process that reads input and prints output</td>
 </tr>
 <tr>
-<td align="automatedshell.c">1</td>
+<td align="center">automatedshell.c</td>
 <td align="right">Non interactive shell that interprets Unix command line input.</td>
 </tr>
 <tr>
@@ -42,11 +42,10 @@
 </tr>
 <tr>
 <td align="center">getline.c</td>
-<td align="right">xx</td>
+<td align="right">Defines function to read input lines.</td>
 </tr1</td>
-<td align="right">xxx</td>
 </tr>
-<td align="center">1</td>
+<td align="center">parse.c</td>
 <td align="right">xxx</td>
 <tr>
 <td align="center">1</td>
@@ -116,6 +115,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1Mjk4NTg3LDE4OTA1NDQzMjUsMjAxOT
-ExNzgwXX0=
+eyJoaXN0b3J5IjpbLTU2OTU3MDMyMywxODkwNTQ0MzI1LDIwMT
+kxMTc4MF19
 -->
