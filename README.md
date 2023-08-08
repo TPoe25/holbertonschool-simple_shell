@@ -109,7 +109,23 @@
 </tr>
 <tr>
 <td align="center">free</td>
-<td align="right">Frees dynamic</td>
+<td align="left">Frees dynamically allocated memory.</td>
+</tr>
+<tr>
+<td align="center">realloc</td>
+<td align="left">Changes the size of a dynamically allocated memory block.</td>
+</tr>
+<tr>
+<td align="center">perror</td>
+<td align="left">Comapa.</td>
+</tr>
+<tr>
+<td align="center">free</td>
+<td align="left">Frees dynamically allocated memory.</td>
+</tr>
+<tr>
+<td align="center">free</td>
+<td align="left">Frees dynamically allocated memory.</td>
 </tr>
 </tbody>
 </table><h2 id="how-to-install">How to install</h2>
@@ -136,6 +152,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NjQxMTI1MywxODkwNTQ0MzI1LDIwMT
-kxMTc4MF19
+eyJoaXN0b3J5IjpbNDE5ODQwNjM4LDE4OTA1NDQzMjUsMjAxOT
+ExNzgwXX0=
 -->
