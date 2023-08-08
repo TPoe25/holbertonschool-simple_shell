@@ -1,4 +1,6 @@
-
+#include "basic_shell.h"
+#include <string.h>
+#include <stdio.h>
 /**
  * execute - execute a command and call the corresponding function
  * @args: an array of strings containing the command and its arguments

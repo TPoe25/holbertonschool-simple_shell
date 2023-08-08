@@ -24,7 +24,7 @@ char **parse_string(char *line)
 		s++;
 		if (s >= bufsize)
 		{
-			bufsize += bufsize;
+			bufsize += 64;
 			tokens = realloc(tokens, bufsize * sizeof(char *));
 			if (!tokens)
 			{

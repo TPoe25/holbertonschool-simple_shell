@@ -1,10 +1,10 @@
 #include "basic_shell.h"
-
 /**
- * main - function to run shell to get output
- *
- * Return: Always 0 success
+ * main - basic shell
+ * Return: 0 if success
  **/
+
+
 int main(void)
 {
 	if (isatty(STDIN_FILENO))

@@ -13,17 +13,11 @@
 /* execute.c */
 int execute(char **args);
 
-/* basic_shell.c */
-int main(void);
-
 /* input_shell.c */
 void input_shell(void);
 
 /* parse.c */
 char **parse_string(char *line);
-
-/* getlinefunc.c */
-char *getlinefunc(void);
 
 /* read_line_stream */
 char *read_line_stream(int interactive);
