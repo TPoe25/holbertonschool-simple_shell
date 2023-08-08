@@ -159,14 +159,33 @@ Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simpl
 <ul>
 <li>
  Run in Interactive Mode</li>
-Interactive mode `./hsh`
+Interactive mode <pre><code>.root@14af6dc6f829:/holbertonschool-simple_shell# ls -l  
+total 108  
+-rw-r--r-- 1 root root 285 Aug 7 21:45 AUTHORS  
+-rw-r--r-- 1 root root 712 Aug 7 21:05 automatedshell.c  
+-rw-r--r-- 1 root root 294 Aug 7 21:05 basic_shell.c  
+-rw-r--r-- 1 root root 773 Aug 7 21:14 basic_shell.h  
+-rw-r--r-- 1 root root 521 Aug 7 21:05 cust_cd.c  
+-rw-r--r-- 1 root root 465 Aug 7 21:05 cust_env.c  
+-rw-r--r-- 1 root root 405 Aug 7 21:05 cust_exit.c  
+-rw-r--r-- 1 root root 1031 Aug 7 21:05 execute.c  
+-rw-r--r-- 1 root root 667 Aug 7 21:05 getline.c  
+-rwxr-xr-x 1 root root 106 Jul 26 17:58 **giterdone**  
+-rwxr-xr-x 1 root root 39424 Aug 7 21:52 **hsh**  
+-rw-r--r-- 1 root root 634 Aug 7 21:05 input_shell.c  
+-rw-r--r-- 1 root root 806 Aug 7 21:05 next_process.c  
+-rw-r--r-- 1 root root 1062 Aug 7 21:05 parse.c  
+-rwxr-xr-x 1 root root 84 Jul 26 17:58 **push**  
+-rw-r--r-- 1 root root 1340 Jul 26 18:42 README.md  
+-rw-r--r-- 1 root root 988 Aug 7 21:05 stream.c  
+-rw-r--r-- 1 root root 359 Aug 7 21:05 structure.h</code></pre>
 
  Run in Non-interactive Mode
- Non interactive mode <pre><code>  ``` root@14af6dc6f829:/holbertonschool-simple_shell# echo “/bin/ls” | ./hsh  
+ Non interactive mode <pre><code>root@14af6dc6f829:/holbertonschool-simple_shell# echo “/bin/ls” | ./hsh  
 AUTHORS  cust_cd.c getline.c next_process.c stream.c  
 automatedshell.c cust_env.c giterdone parse.c  structure.h  
 basic_shell.c  cust_exit.c hsh  push  
-basic_shell.h  execute.c input_shell.c README.md```
+basic_shell.h  execute.c input_shell.c README.md</code></pre>
 
 <!--stackedit_data:
 <<<<<<< HEAD
@@ -177,6 +196,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM1MzEwMjY0LDE0OTg5NDYyNiwxMDAwOD
-M5MzI5LDE4OTA1NDQzMjUsMjAxOTExNzgwXX0=
+eyJoaXN0b3J5IjpbMTA1ODM1NDg2MiwxNDk4OTQ2MjYsMTAwMD
+gzOTMyOSwxODkwNTQ0MzI1LDIwMTkxMTc4MF19
 -->
