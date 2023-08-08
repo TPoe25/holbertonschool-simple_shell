@@ -157,6 +157,8 @@ Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simpl
  - Run in Non-interactive Mode</li>
 </ul>
 
+  ![Alt](img.jpg)
+
 <!--stackedit_data:
 <<<<<<< HEAD
 eyJoaXN0b3J5IjpbMTQwNDQ0MTMzNSwzODkzNjU3ODddfQ==
@@ -166,6 +168,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ1MTE2Mjg0LDE4OTA1NDQzMjUsMjAxOT
-ExNzgwXX0=
+eyJoaXN0b3J5IjpbMTAwMDgzOTMyOSwxODkwNTQ0MzI1LDIwMT
+kxMTc4MF19
 -->
