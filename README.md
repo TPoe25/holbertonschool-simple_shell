@@ -6,7 +6,7 @@
 <h1 id="simple_shell">Simple_Shell 🐚</h1>
 <h2 id="description">Description</h2>
 <ul>
-<li>Here is a code for our Simple Shell code/project that is able to display prompts and execute simple commands utilizing the C programming language. Our shell tackles interactive and non-interactive mode.</li>
+<li>Here is a code for our Simple Shell code/project that is able to display prompts  execute simple commands utilizing the C programming language. Our shell tackles interactive and non-interactive mode.</li>
 </ul>
 <h2 id="files">Files</h2>
 
@@ -43,7 +43,11 @@
 <tr>
 <td align="center">1</td>
 <td align="right">xxx</td>
+</tr1</td>
+<td align="right">xxx</td>
 </tr>
+<td align="center">1</td>
+<td align="right">xxx</td>
 <tr>
 <td align="center">1</td>
 <td align="right">xxx</td>
@@ -112,5 +116,5 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTExNzgwXX0=
+eyJoaXN0b3J5IjpbMTg5MDU0NDMyNSwyMDE5MTE3ODBdfQ==
 -->
