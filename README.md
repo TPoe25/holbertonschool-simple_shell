@@ -61,10 +61,6 @@
 <td align="left">Command to print environmental variables</td>
 </tr>
 <tr>
-<td align="center">cust_cd.c</td>
-<td align="left">Command to change the working directory</td>
-</tr>
-<tr>
 <td align="center">cust_exit.c</td>
 <td align="left">Command to terminate the shell.</td>
 </tr>
@@ -152,27 +148,27 @@ Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simpl
 </ul>
 <h3 id="examples">Examples</h3>
 <ul>
-</ul><p>Run in Interactive Mode:<br>
+</ul>Run in Interactive Mode:<br>
 Interactive mode </p><pre><code>.root@14af6dc6f829:/holbertonschool-simple_shell# ls -l<br>
 total 108<br>
--rw-r–r-- 1 root root 285 Aug 7 21:45 AUTHORS<br>
--rw-r–r-- 1 root root 712 Aug 7 21:05 automatedshell.c<br>
--rw-r–r-- 1 root root 294 Aug 7 21:05 basic_shell.c<br>
--rw-r–r-- 1 root root 773 Aug 7 21:14 basic_shell.h<br>
--rw-r–r-- 1 root root 521 Aug 7 21:05 cust_cd.c<br>
--rw-r–r-- 1 root root 465 Aug 7 21:05 cust_env.c<br>
--rw-r–r-- 1 root root 405 Aug 7 21:05 cust_exit.c<br>
--rw-r–r-- 1 root root 1031 Aug 7 21:05 execute.c<br>
--rw-r–r-- 1 root root 667 Aug 7 21:05 getline.c<br>
--rwxr-xr-x 1 root root 106 Jul 26 17:58 <strong>giterdone</strong><br>
+-rw-rr-- 1 root root 285 Aug 7 21:45 AUTHORS<br>
+-rw-rr-- 1 root root 712 Aug 7 21:05 automatedshell.c<br>
+-rw-rr-- 1 root root 294 Aug 7 21:05 basic_shell.c<br>
+-rw-rr-- 1 root root 773 Aug 7 21:14 basic_shell.h<br>
+-rw-rr-- 1 root root 521 Aug 7 21:05 cust_cd.c<br>
+-rw-rr-- 1 root root 465 Aug 7 21:05 cust_env.c<br>
+-rw-rr-- 1 root root 405 Aug 7 21:05 cust_exit.c<br>
+-rw-rr-- 1 root root 1031 Aug 7 21:05 execute.c<br>
+-rw-rr-- 1 root root 667 Aug 7 21:05 getline.c<br>
+-rwxr-xr-x 1 root root 106 Jul 26 17:58 <strong>**giterdone</strong><br>
 -rwxr-xr-x 1 root root 39424 Aug 7 21:52 <strong>hsh</strong><br>
--rw-r–r-- 1 root root 634 Aug 7 21:05 input_shell.c<br>
--rw-r–r-- 1 root root 806 Aug 7 21:05 next_process.c<br>
--rw-r–r-- 1 root root 1062 Aug 7 21:05 parse.c<br>
+-rw-r-r-- 1 root root 634 Aug 7 21:05 input_shell.c<br>
+-rw-rr-- 1 root root 806 Aug 7 21:05 next_process.c<br>
+-rw-rr-- 1 root root 1062 Aug 7 21:05 parse.c<br>
 -rwxr-xr-x 1 root root 84 Jul 26 17:58 <strong>push</strong><br>
--rw-r–r-- 1 root root 1340 Jul 26 18:42 <a href="http://README.md">README.md</a><br>
--rw-r–r-- 1 root root 988 Aug 7 21:05 stream.c<br>
--rw-r–r-- 1 root root 359 Aug 7 21:05 structure.h</code></pre><p></p>
+-rw-r-r-- 1 root root 1340 Jul 26 18:42 <a href="http://README.md">README.md</a><br>
+-rw-r-r-- 1 root root 988 Aug 7 21:05 stream.c<br>
+-rw-r-r-- 1 root root 359 Aug 7 21:05 structure.h</code></pre><p></p>
 <p>Run in Non-interactive Mode:<br>
 Non interactive mode </p><pre><code>root@14af6dc6f829:/holbertonschool-simple_shell# echo “/bin/ls” | ./hsh<br>
 AUTHORS  cust_cd.c getline.c next_process.c stream.c<br>
@@ -198,3 +194,6 @@ basic_shell.h  execute.c input_shell.c <a href="http://README.md">README.md</a><
 </blockquote>
 </blockquote>
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3MTA5NTM5ODddfQ==
+-->
