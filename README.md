@@ -140,7 +140,7 @@
 <td align="left">Waits for a specific process to change state.</td>
 </tr>
 </tbody>
-</table><h2 id="how-to-install">How to install</h2>
+</table><h2 id="how-to-install">How to install 🔨</h2>
 <p>
 Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simple_shell">github.com/TPoe25/holbertonschool-simple_shell</a>]</p>
 <pre><code>gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
@@ -164,6 +164,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MzcwMzgxMywxODkwNTQ0MzI1LDIwMT
+eyJoaXN0b3J5IjpbMTkwMDI1ODg0OCwxODkwNTQ0MzI1LDIwMT
 kxMTc4MF19
 -->
