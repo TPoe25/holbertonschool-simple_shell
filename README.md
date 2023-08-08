@@ -89,19 +89,19 @@
 </tr>
 <tr>
 <td align="center">getchar</td>
-<td align="left">reads a character from the STDOUT</td>
+<td align="left">reads a character from the STDIN</td>
 </tr>
 <tr>
-<td align="center">1</td>
-<td align="right">xxx</td>
+<td align="center">exit</td>
+<td align="left">Exits the program.</td>
 </tr>
 <tr>
-<td align="center">1</td>
-<td align="right">xxx</td>
+<td align="center">atoi</td>
+<td align="left">Converts a string to an integer.</td>
 </tr>
 <tr>
-<td align="center">1</td>
-<td align="right">xxx</td>
+<td align="center">chdir</td>
+<td align="">Changes the working directory</td>
 </tr>
 <tr>
 <td align="center">1</td>
@@ -136,6 +136,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzOTU5Nzc5NCwxODkwNTQ0MzI1LDIwMT
-kxMTc4MF19
+eyJoaXN0b3J5IjpbNTU4Mzc5ODUsMTg5MDU0NDMyNSwyMDE5MT
+E3ODBdfQ==
 -->
