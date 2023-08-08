@@ -26,11 +26,11 @@
 <td align="right">Structure for builtin commands</td>
 <tr>
 <td align="center">basic_shell.c</td>
-<td align="right"></td>
+<td align="right">Main function for the shell. Interactive or non interactive.</td>
 </tr>
 <tr>
-<td align="center">1</td>
-<td align="right">xxx</td>
+<td align="center">input_shell.c</td>
+<td align="right">Interactive shell process that reads input and prints output</td>
 </tr>
 <tr>
 <td align="center">1</td>
@@ -116,6 +116,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNTAxOTgyNiwxODkwNTQ0MzI1LDIwMT
-kxMTc4MF19
+eyJoaXN0b3J5IjpbLTE5MTM5OTU1MzUsMTg5MDU0NDMyNSwyMD
+E5MTE3ODBdfQ==
 -->
