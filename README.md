@@ -22,11 +22,11 @@
 <td align="center">basic_shell.h</td>
 <td align="right">The main header file. </td>
 </tr>
-<td align="center">1</td>
-<td align="right">xxx</td>
+<td align="center">structure.h</td>
+<td align="right">Structure for builtin commands</td>
 <tr>
-<td align="center">1</td>
-<td align="right">xxx</td>
+<td align="center">basic_shell.c</td>
+<td align="right"></td>
 </tr>
 <tr>
 <td align="center">1</td>
@@ -116,6 +116,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAwNzU4NTIwLDE4OTA1NDQzMjUsMjAxOT
-ExNzgwXX0=
+eyJoaXN0b3J5IjpbMTMwNTAxOTgyNiwxODkwNTQ0MzI1LDIwMT
+kxMTc4MF19
 -->
