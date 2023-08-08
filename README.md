@@ -162,7 +162,7 @@ Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simpl
 Interactive mode `./hsh`
 
  Run in Non-interactive Mode
- Non interactive mode   ``` root@14af6dc6f829:/holbertonschool-simple_shell# echo “/bin/ls” | ./hsh  
+ Non interactive mode <pre><code>  ``` root@14af6dc6f829:/holbertonschool-simple_shell# echo “/bin/ls” | ./hsh  
 AUTHORS  cust_cd.c getline.c next_process.c stream.c  
 automatedshell.c cust_env.c giterdone parse.c  structure.h  
 basic_shell.c  cust_exit.c hsh  push  
@@ -177,6 +177,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDkxMDUwMzgsMTQ5ODk0NjI2LDEwMD
-A4MzkzMjksMTg5MDU0NDMyNSwyMDE5MTE3ODBdfQ==
+eyJoaXN0b3J5IjpbNDM1MzEwMjY0LDE0OTg5NDYyNiwxMDAwOD
+M5MzI5LDE4OTA1NDQzMjUsMjAxOTExNzgwXX0=
 -->
