@@ -84,6 +84,26 @@
 </thead>
 <tbody>
 <tr>
+<td align="center">isatty</td>
+<td align="left">Checks if a file descriptor refers to a terminal.</td>
+</tr>
+<tr>
+<td align="center">getchar</td>
+<td align="right">reads </td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="right">xxx</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="right">xxx</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="right">xxx</td>
+</tr>
+<tr>
 <td align="center">1</td>
 <td align="right">xxx</td>
 </tr>
@@ -116,6 +136,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQzMjk1NjY1LDE4OTA1NDQzMjUsMjAxOT
-ExNzgwXX0=
+eyJoaXN0b3J5IjpbLTI4MjEzMjM1NywxODkwNTQ0MzI1LDIwMT
+kxMTc4MF19
 -->
