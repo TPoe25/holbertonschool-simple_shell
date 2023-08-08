@@ -1,11 +1,9 @@
 #include "basic_shell.h"
-
 /**
  * read_line_stream - reads a line from the stream
- * @interactive: flag telling whether the shell is running in interactive mode
  * Return: pointer that points to line read
  */
-char *read_line_stream(int interactive)
+char *read_line_stream(void)
 {
 	int bufsize = 1024;
 	int stream = 0;
@@ -19,31 +17,33 @@ char *read_line_stream(int interactive)
 	}
 	while (1)
 	{
-		symbol = getchar();
+		symbol = getchar(); /* read a character from the STDIN */
 		if (symbol == EOF)
 		{
-			if (interactive)
-			{
-				putchar('\n');
-			}
 			free(line);
 			exit(EXIT_SUCCESS);
 		}
 		else if (symbol == '\n')
 		{
-			line[stream] = '\0';
+			line[stream] = '\0'; /* NULL terminate the input line */
 			return (line);
 		}
-		line[stream] = symbol;
+		else
+		{
+			line[stream] = symbol;/*store the char in input line*/
+		}
 		stream++;
+	/* reallocate memory for the input line if current size is exceeded */
 		if (stream >= bufsize)
 		{
-			bufsize += 1024;
+			bufsize += bufsize;
 			line = realloc(line, bufsize);
 			if (line == NULL)
 			{
 				fprintf(stderr, "error reallocating in read_line_stream");
-				exit(EXIT_FAILURE); }
+				exit(EXIT_FAILURE);
+			}
 		}
 	}
-	return (line); }
+}
+
