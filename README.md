@@ -4,11 +4,11 @@
 ---
 
 <h1 id="simple_shell">Simple_Shell 🐚</h1>
-<h2 id="description">Description</h2>
+<h2 id="description">Description 📃</h2>
 <ul>
 <li>Here is a code for our Simple Shell code/project that is able to display prompts  execute simple commands utilizing the C programming language. Our shell tackles interactive and non-interactive mode.</li>
 </ul>
-<h2 id="files">Files</h2>
+<h2 id="files">Files 📁</h2>
 
 <table>
 <thead>
@@ -23,7 +23,7 @@
 <td align="left">The main header file. </td>
 </tr>
 <td align="center">structure.h</td>
-<td align="">Structure for builtin commands</td>
+<td align="left">Structure for builtin commands</td>
 <tr>
 <td align="center">basic_shell.c</td>
 <td align="left">Main function for the shell. Interactive or non interactive.</td>
@@ -112,6 +112,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkwMTI4Mjk5LDE4OTA1NDQzMjUsMjAxOT
-ExNzgwXX0=
+eyJoaXN0b3J5IjpbLTIwMjMyNjM5ODgsMTg5MDU0NDMyNSwyMD
+E5MTE3ODBdfQ==
 -->
