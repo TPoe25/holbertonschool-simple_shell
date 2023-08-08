@@ -152,32 +152,11 @@ Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simpl
 <h3 id="examples">Examples</h3>
 <ul>
 <li>
- - Run in Interactive Mode</li>
-<li>
-``root@7d53dd291938:/holbertonschool-simple_shell# ls -l
-total 108
--rw-r--r-- 1 root root   285 Aug  7 22:03 AUTHORS
--rw-r--r-- 1 root root   712 Aug  7 21:00 automatedshell.c
--rw-r--r-- 1 root root   294 Aug  7 21:00 basic_shell.c
--rw-r--r-- 1 root root   773 Aug  7 21:00 basic_shell.h
--rw-r--r-- 1 root root   521 Aug  7 21:00 cust_cd.c
--rw-r--r-- 1 root root   465 Aug  7 21:00 cust_env.c
--rw-r--r-- 1 root root   405 Aug  7 21:00 cust_exit.c
--rw-r--r-- 1 root root  1031 Aug  7 21:00 execute.c
--rw-r--r-- 1 root root   667 Aug  7 21:00 getline.c
--rwxr-xr-x 1 root root   106 Jul 26 17:56 giterdone
--rwxr-xr-x 1 root root 39424 Aug  7 22:03 hsh
--rw-r--r-- 1 root root   634 Aug  7 21:00 input_shell.c
--rw-r--r-- 1 root root   806 Aug  7 21:00 next_process.c
--rw-r--r-- 1 root root  1062 Aug  7 21:00 parse.c
--rwxr-xr-x 1 root root    84 Jul 26 17:59 push
--rw-r--r-- 1 root root  1340 Jul 26 18:43 README.md
--rw-r--r-- 1 root root   988 Aug  7 21:00 stream.c
--rw-r--r-- 1 root root   359 Aug  7 21:00 structure.h
+ Run in Interactive Mode</li>
+
+
  - Run in Non-interactive Mode</li>
 </ul>
-
-  ![Alt](img.jpg)
 
 <!--stackedit_data:
 <<<<<<< HEAD
@@ -188,6 +167,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTU2NTMxOTEsMTAwMDgzOTMyOSwxOD
-kwNTQ0MzI1LDIwMTkxMTc4MF19
+eyJoaXN0b3J5IjpbMTQ5ODk0NjI2LDEwMDA4MzkzMjksMTg5MD
+U0NDMyNSwyMDE5MTE3ODBdfQ==
 -->
