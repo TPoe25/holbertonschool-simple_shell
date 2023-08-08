@@ -162,8 +162,7 @@ Clone the repo found at [<a href="http://github.com/TPoe25/holbertonschool-simpl
 Interactive mode `./hsh`
 
  Run in Non-interactive Mode
- Non interactive mode `enter code here`
-</ul>
+ Non interactive mode  
 
 <!--stackedit_data:
 <<<<<<< HEAD
@@ -174,6 +173,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDAwOTcyNSwxNDk4OTQ2MjYsMTAwMD
+eyJoaXN0b3J5IjpbLTgyNzgxODkzMiwxNDk4OTQ2MjYsMTAwMD
 gzOTMyOSwxODkwNTQ0MzI1LDIwMTkxMTc4MF19
 -->
