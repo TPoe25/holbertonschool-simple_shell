@@ -6,7 +6,7 @@
 <h1 id="simple_shell">Simple_Shell 🐚</h1>
 <h2 id="description">Description</h2>
 <ul>
-<li>Here is a code for our Simple Shell code/project that is able to display prompts to execute simple commands.</li>
+<li>Here is a code for our Simple Shell code/project that is able to display prompts and execute simple commands. </li>
 </ul>
 <h2 id="files">Files</h2>
 
@@ -62,5 +62,5 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDIwNjIyNTNdfQ==
+eyJoaXN0b3J5IjpbLTkyNDY5MDYyNV19
 -->
