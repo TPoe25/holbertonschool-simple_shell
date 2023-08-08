@@ -101,15 +101,15 @@
 </tr>
 <tr>
 <td align="center">chdir</td>
-<td align="">Changes the working directory</td>
+<td align="left">Changes the working directory</td>
 </tr>
 <tr>
-<td align="center">1</td>
-<td align="right">xxx</td>
+<td align="center">malloc</td>
+<td align="left">Allocates memory dynamically.</td>
 </tr>
 <tr>
-<td align="center">1</td>
-<td align="right">xxx</td>
+<td align="center">free</td>
+<td align="right">Frees dynamic</td>
 </tr>
 </tbody>
 </table><h2 id="how-to-install">How to install</h2>
@@ -136,6 +136,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU4Mzc5ODUsMTg5MDU0NDMyNSwyMDE5MT
-E3ODBdfQ==
+eyJoaXN0b3J5IjpbLTM3NjQxMTI1MywxODkwNTQ0MzI1LDIwMT
+kxMTc4MF19
 -->
