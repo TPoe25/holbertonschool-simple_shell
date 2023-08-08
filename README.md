@@ -79,7 +79,7 @@
 <thead>
 <tr>
 <th align="center">Name</th>
-<th align="right">Description</th>
+<th align="r">Description</th>
 </tr>
 </thead>
 <tbody>
@@ -127,6 +127,18 @@
 <td align="center">write</td>
 <td align="left">Writes to a file descriptor.</td>
 </tr>
+<tr>
+<td align="center">feof</td>
+<td align="left">Checks for EOF indicator on a stream.</td>
+</tr>
+<tr>
+<td align="center">write</td>
+<td align="left">Writes to a file descriptor.</td>
+</tr>
+<tr>
+<td align="center">waitpid</td>
+<td align="left">Waits for a specific process to change state.</td>
+</tr>
 </tbody>
 </table><h2 id="how-to-install">How to install</h2>
 <p>
@@ -152,6 +164,6 @@ eyJoaXN0b3J5IjpbNTczNzQ2NzEzXX0=
 -->
 >>>>>>> 343044de0624f0217f58c5b86a3fbceeba6d29b5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjQ3MDIyMTMsMTg5MDU0NDMyNSwyMD
+eyJoaXN0b3J5IjpbLTE1NTQ4MjgyODQsMTg5MDU0NDMyNSwyMD
 E5MTE3ODBdfQ==
 -->
