@@ -14,7 +14,7 @@
 <table>
 <thead>
 <tr>
-<th align="center">Name</th>
+<th align="cente</th>
 <th align="left">Description</th>
 </tr>
 </thead>
@@ -24,47 +24,49 @@
 <td align="left">The main header file. </td>
 </tr>
 <tr><td align="center">structure.h</td>
-<td align="left">Structure for builtin commands</td>
-</tr><tr>
-<td align="center">basic_shell.c</td>
-<td align="left">Main function for the shell. Interactive or non interactive.</td>
+<td align="lefright">Structure for builtin commandst">trt lcetrdt anritttrr>
+tdenter">basic_shell.c</td>
+<td align="lefright">Main function for the shell. Interactive or non interactive.</td>
 </tr>
 <tr>
 <td align="center">input_shell.c</td>
-<td align="left">Interactive shell process that reads input and prints output</td>
+<td align="lefright">Interactive shell process that reads input and prints output</td>
 </tr>
 <tr>
 <td align="center">automatedshell.c</td>
-<td align="left">Non interactive shell that interprets Unix command line input.</td>
-</tr>
-<tr>
-<td align="center">stream.c</td>
-<td align="left">Reads lines from the stream.</td>
-</tr>
-<tr>
-<td align="center">getline.c</td>
-<td align="left">Defines function to read input lines.</td>
-
-</tr>
-<tr><td align="center">parse.c</td>
-<td align="left">Splits a string into multiple tokens.</td>
+<td align="lefright">Non interactive shell that interprets Unix command line </td>
 </tr><tr>
-<td align="center">execute.c</td>
-<td align="left">Executes commands, both custom built-ins and external programs</td>
+<td align="center">stream.c</td>
+<td align="lefright">Reads lines from the stream.</td>
 </tr>
 <tr>
-<td align="center">next_process.c</td>
-<td align="left">Creates a new process</td>
+<td align="center">getlinn</tdn="lefright">Defines function to read input lines.</td>
+
+</tr1</td>
+</tr>
+<td align="center">parse.c</td>
+<td align="left">Splits a string into multiple to</td>
+<t">aincentertt"> inri<//tr>
+<tr>
+<td align="center">execute.c1</td>
+<td align="left">Executes commands, both custom built-ins and external programsr>
+<td align="center</td>
+<td align="r>
+<td align="center">next_process.c1</td>
+<td align="left">Creates a new process>
 </tr>
 <tr>
-<td align="center">cust_env.c</td>
+<td align="center">cust_env.c1</td>
 <td align="left">Command to print environmental variables</td>
 </tr>
 <tr>
-<td align="center">cust_exit.c</td>
+<td align="center">cust_exit.c1</td>
 <td align="left">Command to terminate the shell.</td>
 </tr>
+<tr</td>
+</tr>
 <tr>
+<td align="</td>
 </tr></tbody>
 </table><h2 id="functions-and-system-calls-used">Functions and System calls used</h2>
 <table>
@@ -76,11 +78,10 @@
 </thead>
 <tbody>
 <tr>
-<td align="center">isatty</td>
+<td align="center">isatty1</td>
 <td align="left">Checks if a file descriptor refers to a terminal.</td>
 </tr>
-<tr>
-<td align="center">getchar</td>
+<tr><td align="center">getchar</td>
 <td align="left">reads a character from the STDIN</td>
 </tr>
 <tr>
@@ -100,7 +101,7 @@
 <td align="left">Allocates memory dynamically.</td>
 </tr>
 <tr>
-<td align="center">free</td>
+<td align="cente</td>
 <td align="left">Frees dynamically allocated memory.</td>
 </tr>
 <tr>
@@ -129,7 +130,7 @@
 </tr>
 <tr>
 <td align="center">waitpid</td>
-<td align="left">Waits for a specific process to change state.</td>
+<td align="left">Waits for a specific process to change state.right">xxx</td>
 </tr>
 </tbody>
 </table><h2 id="how-to-install">How to install 🔨</h2>
@@ -195,5 +196,5 @@ basic_shell.h  execute.c input_shell.c <a href="http://README.md">README.md</a><
 </blockquote>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTA5NTM5ODddfQ==
+eyJoaXN0b3J5IjpbLTMzNjEyNzQzOSwtMTcxMDk1Mzk4N119
 -->
